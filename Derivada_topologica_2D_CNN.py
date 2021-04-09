@@ -262,7 +262,7 @@ training_history = model.fit(
         train_experiments_final, 
         train_solutions_final, 
         batch_size=20,
-        epochs=1, 
+        epochs=20, 
         validation_data=(test_experiments_final, test_solutions_final),
         callbacks=[LearningRateScheduler(lr_exp_decay, verbose=1)]
         )
